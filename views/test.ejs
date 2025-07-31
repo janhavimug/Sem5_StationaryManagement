@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        #left-column {
+            width: 50%;
+            padding: 10px;
+        }
+        #right-column {
+            width: 50%;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>Welcome, John Doe</div>
+        <div>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div id="content">
+        <div id="left-column">
+            <h2>Upload Files</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="file">Select a file:</label>
+                <input type="file" name="file" id="file" required><br><br>
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+        <div id="right-column">
+            <h2>Order List</h2>
+            <table>
+                <tr>
+                    <th>Filename</th>
+                    <th>Cost</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Order001.pdf</td>
+                    <td>$100.00</td>
+                    <td>Processing</td>
+                    <td>2023-11-04</td>
+                </tr>
+                <tr>
+                    <td>Order002.pdf</td>
+                    <td>$75.50</td>
+                    <td>Delivered</td>
+                    <td>2023-11-03</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+        </div>
+    </div>
+</body>
+</html>

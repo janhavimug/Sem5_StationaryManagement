@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Management</title>
+    <style>
+              *{
+    font-family: 'Josefin Sans', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #171819;
+    color: #7f8c8d;;
+    opacity: 0.85;
+}
+#navbar {
+    background-color: #c92828;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    
+    padding: 1rem 6.5rem;
+    background-color: #4c4c4e;
+}
+#content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#left-column {
+    width: 500px;
+    padding: 10px;
+    background-color: beige;
+    box-shadow: rgba(240, 46, 46, 0.4) 5px 5px,
+     rgba(240, 46, 46, 0.3) 10px 10px,
+      rgba(240, 46, 46, 0.2) 15px 15px,
+       rgba(240, 46, 170, 0.1) 20px 20px,
+        rgba(240, 46, 170, 0.05) 25px 25px;
+    height: 40vh;
+    margin-top: 200px;
+    margin-left: 90px;
+}
+
+#right-column {
+    width: 50%;
+    padding: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    padding: 1em 2.7em;
+    font-weight: 500;
+    background: #1F2937;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    margin-top: 25px;
+  }
+  
+  .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.25em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  }
+  
+  .label {
+    position: relative;
+    top: -1px;
+  }
+  
+  .transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: rgba(16, 185, 129, 0.6);
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  button:hover .transition {
+    width: 14em;
+    height: 14em;
+  }
+  
+  button:active {
+    transform: scale(0.97);
+  }
+        
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <a href="/loginpage" style="position: absolute;top: 30px;left: 1430px;color: white;text-decoration: none;" >Logout</a>
+        </div>
+    </div>
+    <div id="content">
+        <div id="left-column">
+            <h2>Upload Files</h2>
+            <form  action="/uploadpage" method="POST" enctype="multipart/form-data">
+                <label for="file" style="width: 60%;padding: 10px;border: 1px solid #95a5a6; outline: none;margin: 5px 0;">Select a file:</label>
+                <input type="file" name="pdfFile" id="file" required style="width: 60%;padding: 10px;border: 1px solid #95a5a6; outline: none;margin: 5px 0;"><br><br>
+                <div class="txt_field">
+                    <label style="width: 60%;padding: 10px;border: 1px solid #95a5a6; outline: none;margin: 5px 0;">Email</label>
+                    <input type="text" name="email"  required style="    width: 60%;padding: 10px;border: 1px solid #95a5a6;outline: none;margin: 5px 0;">
+                </div>
+                 <button>
+                    <span class="transition"></span>
+                    <span class="gradient"></span>
+                    <span class="label">pay</span>
+                  </button>
+            </form>
+        </div>
+        <div id="right-column">
+            <h2>Order List</h2>
+            <table>
+                <tr>
+                    <th>Filename</th>
+                    <th>Cost</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+                <h3>NO ORDERS</h3>
+                <!-- Add more rows as needed -->
+            </table>
+        </div>
+    </div>
+    <!-- <script>
+        const formpostpdf = document.querySelector('.form');
+        
+        formpostpdf.addEventListener('submit', event =>{
+            event.preventDefault();
+
+            const formData = new FormData(formpostpdf);
+            const Elementvalue = document.getElementById('username');
+            const email = Elementvalue.textContent;
+            console.log(email);
+            formData.append('username', email);
+            console.log(formData);
+            const data = Object.fromEntries(formData);
+            console.log(data);
+
+            fetch('/uploadpage',{
+                method : 'POST',
+                headers:{
+                    'Content-Type' : 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+        })
+    </script> -->
+</body>
+</html>

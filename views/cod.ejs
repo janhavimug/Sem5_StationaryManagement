@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cash on Delivery Instructions</title>
+    <style>
+/* styles.css */
+
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://i0.wp.com/thesummerstudy.com/wp-content/uploads/2021/03/IMG_2425.jpg?resize=1100%2C1467&ssl=1');
+}
+
+/* styles.css */
+
+/* Common styles */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+} */
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: black;
+    margin-bottom: 25px;
+}
+
+/* Payment Page */
+.payment-option {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.payment-option:hover {
+    transform: scale(1.05);
+}
+
+/* COD Instructions Page */
+ul {
+    list-style-type: disc;
+    color: black;
+    margin-left: 30px;
+}
+
+/* Add more specific styles as needed for your pages */
+
+    </style>
+</head>
+<body>
+    <h1>Cash on Delivery Instructions</h1>
+    <p>Thank you for choosing Cash on Delivery as your payment method. Here are the instructions:</p>
+    <ul>
+        <li>Have the exact cash ready when the delivery arrives.</li>
+        <li>Ensure you are available to receive the delivery.</li>
+        <li>Sign the delivery receipt upon receiving your order.</li>
+    </ul>
+    <p>If you have any questions or need assistance, please contact our customer support.</p>
+</body>
+<script>
+   
+
+    
+        // Add a click event listener to the payment option div
+        document.querySelector('.payment-option').addEventListener('click', function() {
+            // Check if the payment method is "cod"
+            const paymentMethod = this.getAttribute('data-payment-method');
+            
+            if (paymentMethod === 'cod') {
+                // Redirect to the COD instructions page
+                window.location.href = 'cod-instructions.html';
+            }
+        });
+    </script>
+
+
+
+

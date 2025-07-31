@@ -1,0 +1,367 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    position: fixed;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+padding: 1rem 6.5rem;
+background-color: #4c4c4e;
+z-index: 100000;
+}
+
+    
+.nav h2{
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#item li{
+    list-style: none;
+    padding-right: 50px;
+}
+
+#item li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+#item li a:hover,#item .icon i:hover{
+   color: #ff5733;
+   cursor: pointer;
+
+}
+#item .icon i{
+   color: white;
+   padding-right: 30px;
+   font-weight: bolder;
+}
+
+
+.back{
+    background-image: url(bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+.back .overlay{
+    background: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.mid p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+}
+.mid h2{
+    color: #7f8c8d;
+    font-size: 3rem;
+}
+.mid .btn{
+    margin-top: 2rem;
+
+}
+
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.mid .btn a.simple{ 
+    color: #fff;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+}
+
+
+.mid .btn a.simple:hover{
+    color: #ff5733;
+}
+.mid .btn a.border{ 
+    color: #ff5733;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+    border: 1px solid #ff5733;
+}
+
+.mid .btn a.border:hover{
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+
+.details{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background: #171819;
+}
+
+.details h3,h5,h6{
+    color: white;
+}
+.details .one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.details .one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+
+.details .one h6{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 1.2rem;
+}
+
+.details .one p{
+    color: #666262;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+.details .one a{
+    color: white;
+    background: #f13a11;
+    padding: 1rem 01rem ;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+.details .one a:hover{
+    color: #f13a11;
+    background: #fff;
+}
+
+.details .two{
+    width: 45%;
+    border-left: 1px solid #666262;
+    padding-left: 4rem;
+}
+.details .two h3{
+    font-size: 2.5rem;
+    
+}
+.details .two h5{
+    font-size: 1.1rem;
+    
+}
+.details .two p{
+    font-size: 1.1rem;
+    color: #666262;
+    margin-bottom: 0.8rem;
+}
+
+.shop{
+    background: #f9f9f9;
+    padding: 8rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.shop .about{
+    width: 39%;
+}
+.shop .about h2{
+color: #212529;
+font-size: 2.1rem;
+padding-bottom: 1.8rem;
+}
+.shop .about p{
+
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    
+    }
+
+
+.shop .picture{
+width: 57%;
+display: flex;
+direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.shop .picture .arya{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: white;
+    box-shadow:
+  0.9px 1.9px 0.9px rgba(0, 0, 0, 0.022),
+  2.2px 4.6px 2.2px rgba(0, 0, 0, 0.032),
+  4.1px 8.6px 4.1px rgba(0, 0, 0, 0.04),
+  7.4px 15.4px 7.4px rgba(0, 0, 0, 0.048),
+  13.8px 28.8px 13.8px rgba(0, 0, 0, 0.058),
+  33px 69px 33px rgba(0, 0, 0, 0.08)
+}
+.shop .picture .arya .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.shop .picture .arya .name,.shop .picture .arya .pro{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.shop .picture .arya .name{
+    padding: 5px 20px 0 20px;
+}
+
+.shop .picture .arya .aryadetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.shop .picture .arya .name h4{
+    color: #212529;
+    font-size: 1.5rem;
+    
+}
+
+.shop .picture .arya .name i,.shop .picture .arya .pro i{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+.shop .picture .arya .pro{
+    padding: 0 20px 5px 20px;
+}
+.shop .picture .arya .pro h3{
+    color: #212529;
+    
+}
+.class{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 8rem;
+}
+.class .paragraph{
+    font-size: 1.3rem;
+    color: #95a5a6;
+    padding-bottom: 6px;
+    text-align: center;
+}
+.class .h2{
+    font-size: 2.2rem;
+    color: #222;
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.contact{
+    padding: 8rem;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact .form{
+    width: 45%;
+    height: 60vh;
+}
+.contact .form h2{
+    font-size: 2rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact .form .submit input,.contact .form .submit textarea{
+    width: 100%;    
+    padding: 15px;
+    border: 1px  solid #95a5a6;
+    outline: none;
+    margin: 13px 0;
+}
+.contact .form .submit input:focus , .contact .form .submit textarea:focus{
+    border: 1px solid #111;
+
+}
+.contact .form .submit input::placeholder{
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.contact .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+.contact .form .submit a{
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 13px;
+
+}
+.contact .map{
+    width: 45%;
+
+}
+.contact .map iframe{
+    width: 100%;
+    
+}
+#mapimage{
+    width :"600";
+    height:"450";
+    border:0;
+    /* allowfullscreen:"";
+    loading:"lazy";
+    referrerpolicy:"no-referrer-when-downgrade" */
+}

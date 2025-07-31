@@ -1,0 +1,27 @@
+{
+  "name": "sample_mini_project",
+  "version": "1.0.0",
+  "description": "Sample for final mini project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arya Angane",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "hbs": "^4.2.0",
+    "mongodb": "^6.1.0",
+    "mongoose": "^6.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.0.1",
+    "path": "^0.12.7",
+    "pdf-parse": "^1.1.1",
+    "pug": "^3.0.2"
+  }
+}

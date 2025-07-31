@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#navbar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#left-side {
+    width: 48%;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+#right-side {
+    width: 48%;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+#upload-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+#message {
+    margin-top: 20px;
+}
+#payment-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28A745;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+th {
+    background-color: #333;
+    color: white;
+}
+#collected-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #DC3545;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
